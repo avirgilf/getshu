@@ -3,7 +3,7 @@
   <div class="container" style=" margin-left: auto; margin-right: auto; display: block;" >
     <a href="{{ route('dashboard') }}">
         <img style="width:100px ; margin-left: auto; margin-right: auto;display: block;" 
-             src="../storage/app/public/profile-photos/SHUGAI.png"/>
+             src="../public/storage/SHUGAI.png"/>
     </a>
     
 <!-- Logo Image 
