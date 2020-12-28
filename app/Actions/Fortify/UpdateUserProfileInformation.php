@@ -22,8 +22,8 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'email', 'max:255', Rule::unique('users')->ignore($user->id)],
             'photo' => ['nullable', 'image', 'max:1024'],
-            'short_budget' => ['required'],
-            'long_budget' => ['required'],
+            #'short_budget' => ['required'],
+            #'long_budget' => ['required'],
         ])->validateWithBag('updateProfileInformation');
 
         if (isset($input['photo'])) {
@@ -37,8 +37,8 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
             $user->forceFill([
                 'name' => $input['name'],
                 'email' => $input['email'],
-                'short_budget' => $input['short_budget'],
-                'long_budget' => $input['long_budget'],
+             #   'short_budget' => $input['short_budget'],
+             #   'long_budget' => $input['long_budget'],
             ])->save();
         }
     }
