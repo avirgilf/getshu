@@ -109,7 +109,7 @@
         @livewireScripts
     </body>
     <footer class="text-center" style="position: fixed; bottom:0;width:100%; 
-    background-image:url('../storage/app/public/profile-photos/footerbg.png');background-position: center; 
+    background-image:url('../public/storage/footerbg.png');background-position: center; 
     background-repeat: no-repeat; background-size:100%;display: inline;">
         <!-- Copyright -->
         <i class="fas fa-heart" style="font-size:25px; "></i>
