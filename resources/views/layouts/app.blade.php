@@ -14,15 +14,16 @@
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        @livewireStyles
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></head>
+
+       @livewireStyles
 
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
         <style>
 
             
@@ -107,4 +108,13 @@
 
         @livewireScripts
     </body>
+    <footer class="text-center" style="position: fixed; bottom:0;width:100%; 
+    background-image:url('../storage/app/public/profile-photos/footerbg.png');background-position: center; 
+    background-repeat: no-repeat; background-size:100%;display: inline;">
+        <!-- Copyright -->
+        <i class="fas fa-heart" style="font-size:25px; "></i>
+        <i class="fas fa-home"  style="font-size:50px; margin-top:15px;margin-left:50px; margin-right:50px"></i>
+        <i class="fas fa-cog" style="font-size:25px;"></i>       
+        <!-- Copyright -->
+    </footer>
 </html>
