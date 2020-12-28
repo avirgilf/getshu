@@ -194,5 +194,5 @@
                 <a class="badge badge-secondary"href="fcity">Add City</a>
             </div>
 <?php   else: ?>
-            Otherwise this will show.
+            message.
 <?php   endif; ?>
