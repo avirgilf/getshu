@@ -188,10 +188,10 @@
     $profil=Auth::user()->profil;
         if ($profil=='Admin'): ?>
             <div>
-                <a style="color:black" href="fcurrency">Add Currency</a><br>            
-                <a style="color:black" href="flanguage">Add Language</a><br>
-                <a style="color:black" href="fcountry">Add Country</a><br>
-                <a style="color:black" href="fcity">Add City</a><br>
+                <a class="badge badge-secondary" href="fcurrency">Add Currency</a>           
+                <a class="badge badge-secondary"href="flanguage">Add Language</a>
+                <a class="badge badge-secondary"href="fcountry">Add Country</a>
+                <a class="badge badge-secondary"href="fcity">Add City</a>
             </div>
 <?php   else: ?>
             Otherwise this will show.

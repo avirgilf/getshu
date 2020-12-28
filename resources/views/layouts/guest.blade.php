@@ -14,33 +14,41 @@
 
      <!-- Fonts -->
      <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
         <!-- Scripts -->
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.js" defer></script>
         <style>
-            body {
+
+          body
+          {
                 font-family: 'Nunito';
-            }
-            .sign-content {
+          }
+          *
+          {
+                box-sizing: border-box;
+          }
+
+            .mobileShow {display: none;}
+            .pcshow { display: none; }
+            /* Smartphone Portrait and Landscape */
+            @media only screen
+              and (max-width : 500px){ 
+                .mobileShow {display: block;}
+
+                .sign-content {
                 background-color: #FD5068;
-                position: absolute;
-                top: 10%;
-                bottom: 10%;
-                left: 10%;
-                right: 10%;
-                width: 80%;
-                height:80%;
-                box-shadow: 1px 1px 12px #555;   
             }
             .sign-content-in {
                 background-color: #FD5068;
                 position: absolute;
-                top: 4%;
-                bottom: 4%;
+                top: 0%;
+                bottom: 0%;
                 left: 2%;
                 right: 2%;
                 width: 96%;
-                height:92%;
+                height:100%;
                 border-width: 2px;
                 border-style: solid;
                 border-color: white;
@@ -63,13 +71,14 @@
                 cursor:pointer;
                 overflow: hidden;  
                 color:white;
-                width:50%;
+                width:100%;
                 height:40px;
-                margin:4px;   
+                margin-top:0px;
+                border-radius: 15px;
             }
             .vertical-align{
                 vertical-align: middle;
-                margin-top: 30%;
+                margin-top: 10%;
                 padding: auto;
             }
             .vertical-align1{
@@ -95,111 +104,102 @@
                 border-radius: 15px;
                 Margin-top:10px;
                 padding-left: 20px;
+            }    
+        
+            #regForm {
+              margin: 100px auto;
+              font-family: Raleway;
+              padding: 40px;
+              width: 100%;
+              min-width: 300px;
             }
-            @media only screen and (max-width: 1020px){
-        
-                .iinput{
-                    width:100%;
-                    background-color: #F5F5F5;
-                    border: 0px solid #F5F5F5;
-                    height: 40px;
-                    border-radius: 15px;
-                    Margin-top:10px;
-                    padding-left: 20px;
-                }
-                .iinputsub{
-                    width:100%;
-                    background-color: #343434;
-                    color:white;
-                    border: 0px solid #343434;
-                    height: 40px;
-                    border-radius: 15px;
-                    Margin-top:10px;
-                    padding-left: 20px;
-                    text-decoration:none;
-                }
+            
+            h1 {
+              text-align: center;  
             }
-        
-        *{
-          box-sizing: border-box;
-        }
-        
-        
-        
-        #regForm {
-          margin: 100px auto;
-          font-family: Raleway;
-          padding: 40px;
-          width: 70%;
-          min-width: 300px;
-        }
-        
-        h1 {
-          text-align: center;  
-        }
-        
-        input {
-          padding: 10px;
-          width: 100%;
-          font-size: 17px;
-          font-family: Raleway;
-          border: 1px solid #aaaaaa;
-        }
-        
-        /* Mark input boxes that gets an error on validation: */
-        input.invalid {
-          background-color: #ffdddd;
-        }
-        
-        /* Hide all steps by default: */
-        .tab {
-          display: none;
-        }
-        
-        button {
-            padding: 10px 20px;
-            font-size: 17px;
-            font-family: Raleway;
-            cursor: pointer;
-        
-            background-color: #343434;
-            color:white;
-            border: 0px solid #343434;
-            height: 40px;
-            border-radius: 15px;
-            Margin-top:10px;
-            padding-left: 20px;
-            text-decoration:none;
-        }
-        
-        button:hover {
-          opacity: 0.8;
-        }
-        
-        #prevBtn {
-          background-color: #bbbbbb;
-        }
-        
-        /* Make circles that indicate the steps of the form: */
-        .step {
-          height: 15px;
-          width: 15px;
-          margin: 0 2px;
-          background-color: #bbbbbb;
-          border: none;  
-          border-radius: 50%;
-          display: inline-block;
-          opacity: 0.5;
-        }
-        
-        .step.active {
-          opacity: 1;
-        }
-        
-        /* Mark the steps that are finished and valid: */
-        .step.finish {
-          background-color: #4CAF50;
-        }
+            
+            input {
+              padding: 10px;
+              width: 100%;
+              font-size: 17px;
+              font-family: Raleway;
+              border: 1px solid #aaaaaa;
+            }
+            
+            /* Mark input boxes that gets an error on validation: */
+            input.invalid {
+              background-color: #ffdddd;
+            }
+            
+            /* Hide all steps by default: */
+            .tab {
+              display: none;
+            }
+            
+            button {
+                padding: 10px 20px;
+                font-size: 17px;
+                font-family: Raleway;
+                cursor: pointer;
+            
+                background-color: #343434;
+                color:white;
+                border: 0px solid #343434;
+                height: 40px;
+                border-radius: 15px;
+                Margin-top:10px;
+                padding-left: 20px;
+                text-decoration:none;
+            }
+            
+            button:hover {
+              opacity: 0.8;
+            }
+            
+            #prevBtn {
+              background-color: #bbbbbb;
+            }
+            
+            /* Make circles that indicate the steps of the form: */
+            .step {
+              height: 15px;
+              width: 15px;
+              margin: 0 2px;
+              background-color: #bbbbbb;
+              border: none;  
+              border-radius: 50%;
+              display: inline-block;
+              opacity: 0.5;
+            }
+            
+            .step.active {
+              opacity: 1;
+            }
+            
+            /* Mark the steps that are finished and valid: */
+            .step.finish {
+              background-color: #4CAF50;
+            }
+
+            }
+
+
+
+
+            /* pc Portrait and Landscape */
+            @media only screen
+            and (min-width : 501px){
+                .pcshow { display: block;}
+
+                
+
+            }
+
+
+
+
+           
+            
   
     </style>
     
@@ -212,7 +212,8 @@
                     <div class="row">
                         <div class="col-md-6 white-text text-center ">
                             <div class="vertical-align">
-                                <span class="span-to-30">Be Connected in Africa</span><br>
+                                <img style="whith:150px; height:150px;"  src="Shuga.png" /><br>
+                                <span class="white-text" style="font-family: 'Audiowide', cursive;">Get shuga</span>
                             </div>
                         </div>
                             <div class="col-md-6 white-text text-center coo">
