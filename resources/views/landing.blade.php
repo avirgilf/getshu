@@ -3,14 +3,14 @@
 
 @section('content')
         <!--Mobile view-->
-    <div class="mobileShow">
+    <div class="mobileShow" >
         @if (Route::has('login'))
-            <div class="" style="padding-top:17%">
-               <!-- <span class="span-to-30"> Francais - English</span><br>-->
+            <div class="" style="padding-top:35%">
+               <!-- <span class="span-to-30"> Francais - English</span>-->
                 @auth
             <a href="{{ url('/dashboard') }}">{{Auth::user()->name}}</a>
                 @else
-                    <a class="btn buton" href="{{ route('login') }}">Login</a>
+                    <a style="margin-top:15% ;" class="btn buton" href="{{ route('login') }}">Login</a><br><br>
                     @if (Route::has('register'))
                         <a class="btn buton" href="{{ route('register') }}">Register</a>
                     @endif

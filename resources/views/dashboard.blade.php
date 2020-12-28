@@ -7,10 +7,6 @@
         $profil=Auth::user()->profil; $countryid=Auth::user()->countryid; $gender=Auth::user()->gender;
         if ($profil=='client'): ?>
 
-        <div class="container d-flex flex-row">
-            @yield('search-result')
-        </div>
-
         <div class="" style="padding-top:0px; margin:0px">
             <form method="post" action="search-result">
                 @csrf
@@ -47,10 +43,13 @@
                             <input type="text" class="col-md-2" name="old" id="old" placeholder="Old" class="" style="border-radius: 15px; height:30px; width:30%">
                             <!-- recuperation des budgets-->
                             
-                            <br><br><input  type="submit" value="Search" class="btn btn-default" style="border-radius: 15px; width:100%">
+                            <br><br><input  type="submit" value="Search" class="btn" style="border-radius: 15px; width:100%; border-style: solid; border-color: black">
                     </div>
                 </div>
             </form>
+        </div>
+        <div class="container d-flex flex-row">
+            @yield('search-result')
         </div>
     
 <?php else: ?>

@@ -78,13 +78,13 @@
             }
             .vertical-align{
                 vertical-align: middle;
-                margin-top: 10%;
+                margin-top: 0%;
                 padding: auto;
             }
             .vertical-align1{
                 margin: auto;
                 width: 80%;
-                padding: 10px;
+                padding: 0px;
             }
             .iinput{
                 width:100%;
@@ -109,7 +109,7 @@
             #regForm {
               margin: 100px auto;
               font-family: Raleway;
-              padding: 40px;
+              padding: 10px;
               width: 100%;
               min-width: 300px;
             }
@@ -212,7 +212,7 @@
                     <div class="row">
                         <div class="col-md-6 white-text text-center ">
                             <div class="vertical-align">
-                                <img style="whith:150px; height:150px;"  src="Shuga.png" /><br>
+                                <img style="whith:150px; height:100px;"  src="../public/storage/Shuga.png" /><br>
                                 <span class="white-text" style="font-family: 'Audiowide', cursive;">Get shuga</span>
                             </div>
                         </div>

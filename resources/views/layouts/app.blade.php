@@ -110,11 +110,11 @@
     </body>
     <footer class="text-center" style="position: fixed; bottom:0;width:100%; 
     background-image:url('../public/storage/footerbg.png');background-position: center; 
-    background-repeat: no-repeat; background-size:100%;display: inline;">
+    background-repeat: no-repeat; background-size:100%; display: inline;height:70px">
         <!-- Copyright -->
-        <i class="fas fa-heart" style="font-size:25px; "></i>
-        <i class="fas fa-home"  style="font-size:50px; margin-top:15px;margin-left:50px; margin-right:50px"></i>
-        <i class="fas fa-cog" style="font-size:25px;"></i>       
+        <i class="fas fa-heart" style="color:white;font-size:30px; "></i>
+        <i class="fas fa-home"  style="font-size:50px; margin-top:13px;margin-left:50px; margin-right:50px"></i>
+        <i class="fas fa-cog" style="color:white;font-size:30px;"></i>       
         <!-- Copyright -->
     </footer>
 </html>

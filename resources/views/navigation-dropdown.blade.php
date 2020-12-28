@@ -3,7 +3,7 @@
   <div class="container" style=" margin-left: auto; margin-right: auto; display: block;" >
     <a href="{{ route('dashboard') }}">
         <img style="width:100px ; margin-left: auto; margin-right: auto;display: block;" 
-             src="../public/storage/SHUGAI.png"/>
+             src="../public/storage/shuga_logo.png"/>
     </a>
     
 <!-- Logo Image 
@@ -30,6 +30,6 @@
                 <a class="badge badge-secondary"href="fcity">Add City</a>
             </div>
 <?php   else: ?>
-            message.
+            <br>
 <?php   endif; ?>
 
