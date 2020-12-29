@@ -6,7 +6,7 @@
     <a href="{{ route('dashboard') }}" style="">
         <img style="width:100px ; display: inline;" src="../public/storage/shuga_logo.png"/>
     </a>
-    <span class="float-right">
+    <span class="float-right" style="margin-top:8%">
     <i class="fas fa-heart" style="color:white;font-size:25px; margin:auto; "></i>
     <a href="{{ route('profile.show') }}"><i class="fas fa-cog" style="color:white;font-size:25px; margin:auto;"></i></a>  
     </span>
