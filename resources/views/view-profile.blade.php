@@ -8,7 +8,7 @@
             <div class="row "style="background:white">                         
                 <div class="col-lg-4 shadow" style="">
                 <a class="btn" href="../dashboard"><--Back</a>
-                    <img  style="widht:100% ; heigth: 450px" class="" src="../../storage/app/public/<?php $photo=$data['profile_photo_path']; echo $photo ; ?>"/>  
+                    <img  style="widht:100% ; heigth: 450px" class="" src="../../../storage/app/public/<?php $photo=$data['profile_photo_path']; echo $photo ; ?>"/>  
                                             
                 </div>
                 <div class="col-lg-4 shadow-lg">
