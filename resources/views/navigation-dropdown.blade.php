@@ -1,15 +1,15 @@
 <!-- NAVBAR-->
 <nav class="navbar navbar-expand-sm">
-  <div class="container text-center" style="width:100%; 
+  <div class="container" style="width:100%; 
                                 margin-left: auto; margin-right: auto; display: inline;" >
-        <i class="fas fa-heart" style="color:white;font-size:30px; "></i>
         
-    <a href="{{ route('dashboard') }}">
-        <img style="width:100px ; margin-left:50px; margin-right:50px;display: inline;" 
-             src="../public/storage/shuga_logo.png"/>
+    <a href="{{ route('dashboard') }}" style="">
+        <img style="display: inline;" src="../public/storage/shuga_logo.png"/>
     </a>
-    <a href="{{ route('profile.show') }}"><i class="fas fa-cog" style="color:white;font-size:30px;"></i></a>  
-
+    <span class="float-right">
+    <i class="fas fa-heart" style="color:white;font-size:25px; margin:auto; "></i>
+    <a href="{{ route('profile.show') }}"><i class="fas fa-cog" style="color:white;font-size:25px; margin:auto;"></i></a>  
+    </span>
 <!-- Logo Image 
     <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
 
