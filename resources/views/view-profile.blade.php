@@ -7,11 +7,9 @@
     <div class="container">
             <div class="row "style="background:white">                         
                 <div class="col-lg-4 shadow" style="">
-                <a class="btn" href="../dashboard"><--Back</a>
-                    <img  style="widht:100% ; heigth: 450px" class="" src="storage/app/public/<?php $photo=$data['profile_photo_path']; echo $photo ; ?>"/>  
-                                            
+                    <img  style="widht:100% ; heigth: 450px" class="" src="../../public/storage/<?php $photo=$data['profile_photo_path']; echo $photo ; ?>"/>  
                 </div>
-                <div class="col-lg-4 shadow-lg">
+                <div class="col-lg-4">
                     <h2>
                         <?php 
                             $longString = $data['name'] ;
@@ -34,7 +32,7 @@
                 
                             <div class="rounded-circle shadow" 
                                  style="width:150px ; height:160px; 
-                                        background-image: url('storage/app/public/<?php $photo=$user['profile_photo_path']; echo $photo ; ?>'); 
+                                        background-image: url('../../public/storage/<?php $photo=$user['profile_photo_path']; echo $photo ; ?>'); 
                                         background-position: center; background-repeat: no-repeat; 
                                         background-size: 100% 100%; margin-right:4px;margin-left:4px">
                                     
@@ -47,7 +45,7 @@
                                                     echo substr($longString, 0, 8).', '.$user['old'];
                                                 ?>
                                             </span><br>
-                                            Lagos</a>
+                                            view</a>
                                         </div>
                                         
                             </div>
