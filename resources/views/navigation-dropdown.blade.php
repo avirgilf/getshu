@@ -8,8 +8,8 @@
     </a>
     <span class="float-right" style="margin-top:3%">
     <i class="fas fa-heart" style="color:white;font-size:25px; margin-rigth:1% "></i>
-    <i class="fas fa-phone" style="color:white;font-size:25px; margin-rigth:1%; "></i>
-    <i class="fas fa-video" style="color:white;font-size:25px; margin-rigth:1%; "></i>
+    <!--<i class="fas fa-phone" style="color:white;font-size:25px; margin-rigth:1%; "></i>
+    <i class="fas fa-video" style="color:white;font-size:25px; margin-rigth:1%; "></i>-->
     <i class="fas fa-folder-open" style="color:white;font-size:25px; margin-rigth:1%; "></i>
     <a href="{{ route('profile.show') }}"><i class="fas fa-cog" style="color:white;font-size:25px; margin:auto;"></i></a>  
     </span>
