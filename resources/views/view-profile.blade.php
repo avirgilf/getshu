@@ -2,7 +2,7 @@
     <div class="">
             <div class="row "style="background:white">                         
                 <div class="col-lg-4 shadow" style="">
-                    <img  style="widht:100% ; heigth: 400px" class="" src="../../public/storage/<?php $photo=$data['profile_photo_path']; echo $photo ; ?>"/>  
+                    <img  style="" class="img-responsive" src="../../public/storage/<?php $photo=$data['profile_photo_path']; echo $photo ; ?>"/>  
                 </div>
                 <div class="col-lg-4">
                     <h2>
