@@ -5,7 +5,7 @@
                     <img  class="img-responsive" src="../../public/storage/<?php $photo=$data['profile_photo_path']; echo $photo ; ?>"/>  
                 </div>
                 <div class="col-lg-4">
-                    <h4 style="font-family: 'Audiowide', cursive;margin-top:10px">
+                    <h4 style="margin-top:10px">
                         <?php 
                             $longString = $data['name'] ;
                             echo ucfirst(substr($longString, 0, 8).', '.$data['old']);
