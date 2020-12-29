@@ -2,16 +2,17 @@
     <div class="">
             <div class="row "style="background:white">                         
                 <div class="col-lg-4 shadow" style="">
-                    <img  style="" class="img-responsive" src="../../public/storage/<?php $photo=$data['profile_photo_path']; echo $photo ; ?>"/>  
+                    <img  class="img-responsive" src="../../public/storage/<?php $photo=$data['profile_photo_path']; echo $photo ; ?>"/>  
                 </div>
                 <div class="col-lg-4">
-                    <h2>
+                    <h4 style="font-family: 'Audiowide', cursive;margin-top:10px">
                         <?php 
                             $longString = $data['name'] ;
-                            echo substr($longString, 0, 8).', '.$data['old'].' Old';
+                            echo ucfirst(substr($longString, 0, 8).', '.$data['old']);
                         ?>
-                    </h2>
-                    <a href="../chat/{{$data['id']}}" class="btn btn-primary">Send message</a>                </div>
+                        <a href="../chat/{{$data['id']}}"><i class="fas fa-paper-plane" style="color:black;font-size:25px; margin:auto;"></i></a>  
+                       
+                    </h4>
                 <div class="col-lg-4 shadow-sm">
                     <h2>Offers</h2>
                 </div>
