@@ -4,7 +4,7 @@
                                 margin-left: auto; margin-right: auto; display: inline;" >
         
     <a href="{{ route('dashboard') }}" style="">
-        <img style="display: inline;" src="../public/storage/shuga_logo.png"/>
+        <img style="width:100px ; display: inline;" src="../public/storage/shuga_logo.png"/>
     </a>
     <span class="float-right">
     <i class="fas fa-heart" style="color:white;font-size:25px; margin:auto; "></i>
