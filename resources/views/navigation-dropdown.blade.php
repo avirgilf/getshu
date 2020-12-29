@@ -7,10 +7,10 @@
         <img style="width:100px ; display: inline;" src="../public/storage/shuga_logo.png"/>
     </a>
     <span class="float-right" style="margin-top:3%">
-    <i class="fas fa-heart" style="color:white;font-size:25px; margin-rigth:1% "></i>
+    <i class="fas fa-heart" style="color:white;font-size:25px; margin-rigth:3% "></i>
     <!--<i class="fas fa-phone" style="color:white;font-size:25px; margin-rigth:1%; "></i>
     <i class="fas fa-video" style="color:white;font-size:25px; margin-rigth:1%; "></i>-->
-    <i class="fas fa-folder-open" style="color:white;font-size:25px; margin-rigth:1%; "></i>
+    <i class="fas fa-folder-open" style="color:white;font-size:25px; margin-rigth:3%; "></i>
     <a href="{{ route('profile.show') }}"><i class="fas fa-cog" style="color:white;font-size:25px; margin:auto;"></i></a>  
     </span>
 <!-- Logo Image 
