@@ -30,9 +30,9 @@ Route::get('/fcity', 'App\Http\Controllers\CityController@feshcity');
 Route::post('/acity', 'App\Http\Controllers\CityController@addcity');
 
 
-Route::get('chat/{id}',[chatController::class,'chatWhith'])->name('chat');
-Route::get('messages',[chatController::class,'showMessages']);
-Route::post('chat/{id}',[chatController::class,'store']);
+Route::get('chat/{id}','App\Http\Controllers\chatController@chatWhith')->name('chat');
+Route::get('messages','App\Http\Controllers\chatController@showMessages');
+Route::post('chat/{id}','App\Http\Controllers\chatController@store');
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
