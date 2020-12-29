@@ -8,7 +8,7 @@
             <div class="row "style="background:white">                         
                 <div class="col-lg-4 shadow" style="">
                 <a class="btn" href="../dashboard"><--Back</a>
-                    <img  style="widht:100% ; heigth: 450px" class="" src="../../../storage/app/public/<?php $photo=$data['profile_photo_path']; echo $photo ; ?>"/>  
+                    <img  style="widht:100% ; heigth: 450px" class="" src="storage/app/public/<?php $photo=$data['profile_photo_path']; echo $photo ; ?>"/>  
                                             
                 </div>
                 <div class="col-lg-4 shadow-lg">
@@ -18,7 +18,7 @@
                             echo substr($longString, 0, 8).', '.$data['old'].' Old';
                         ?>
                     </h2>
-                </div>
+                    <a href="../chat/{{$data['id']}}" class="btn btn-primary">Send message</a>                </div>
                 <div class="col-lg-4 shadow-sm">
                     <h2>Offers</h2>
                 </div>

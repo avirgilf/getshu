@@ -29,6 +29,12 @@ Route::post('/alang', 'App\Http\Controllers\LanguageController@addlanguage');
 Route::get('/fcity', 'App\Http\Controllers\CityController@feshcity');
 Route::post('/acity', 'App\Http\Controllers\CityController@addcity');
 
+
+Route::get('chat/{id}','App\Http\Controllers\chatController@chatWhith')->name('chat');
+Route::get('messages','App\Http\Controllers\chatController@showMessages');
+Route::post('chat/{id}','App\Http\Controllers\chatController@store');
+
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
