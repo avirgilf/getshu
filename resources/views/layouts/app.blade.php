@@ -108,15 +108,5 @@
 
         @livewireScripts
     </body>
-    <footer class="text-center" style="position: fixed; bottom:0;width:100%; 
-    background-image:url('../public/storage/footerbg.png');background-position: center; 
-    background-repeat: no-repeat; background-size:100%; display: inline;height:70px">
-        <!-- Copyright -->
-        <i class="fas fa-heart" style="color:white;font-size:30px; "></i>
-        <a href="{{ route('dashboard') }}"><i class="fas fa-home"  style="color:black;font-size:50px; margin-top:13px;margin-left:50px; margin-right:50px"></i></a> 
-        <a href="{{ route('profile.show') }}"><i class="fas fa-cog" style="color:white;font-size:30px;"></i></a>  
-
-            
-        <!-- Copyright -->
-    </footer>
+    
 </html>
