@@ -26,12 +26,6 @@
    
         <style>
 
-            
-            .section-right1{
-                width: 30%;
-                background:white;
-            }
-
             body {
                 font-family: 'Nunito';
             }
@@ -78,12 +72,7 @@
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100">
-            <!-- Page Heading -->
-            {{-- <header class="bg-white shadow">
-                <div>
-                    {{ $header }}
-                </div>
-            </header> --}}
+           
 
             <!-- Page Content -->
             <main>
@@ -94,7 +83,7 @@
                     <div class=""style="background:white">                         
                             @include('navigation-dropdown')
                     </div>
-                    <div class="">
+                    <div class="" style="margin-top:0px; padding-top:0px">
                             {{ $slot }}
                     </div>
                 </div>

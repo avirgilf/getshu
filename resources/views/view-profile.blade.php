@@ -1,13 +1,8 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2>
-            {{__('Dashbord')}}
-        </h2>
-    </x-slot>  
-    <div class="container">
+<x-app-layout> 
+    <div class="">
             <div class="row "style="background:white">                         
                 <div class="col-lg-4 shadow" style="">
-                    <img  style="widht:100% ; heigth: 450px" class="" src="../../public/storage/<?php $photo=$data['profile_photo_path']; echo $photo ; ?>"/>  
+                    <img  style="widht:100% ; heigth: 400px" class="" src="../../public/storage/<?php $photo=$data['profile_photo_path']; echo $photo ; ?>"/>  
                 </div>
                 <div class="col-lg-4">
                     <h2>
