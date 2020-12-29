@@ -7,7 +7,7 @@
         $profil=Auth::user()->profil; $countryid=Auth::user()->countryid; $gender=Auth::user()->gender;
         if ($profil=='client'): ?>
 
-        <div class="" style="padding-top:0px; margin:0px">
+        <div class="" style="padding-top:0px; margin:0px"><br>
             <form method="post" action="search-result">
                 @csrf
                 <div class="container">

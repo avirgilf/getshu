@@ -37,6 +37,6 @@
                 <a class="badge badge-secondary"href="fcity">Add City</a>
             </div>
 <?php   else: ?>
-            <br>
+            
 <?php   endif; ?>
 
