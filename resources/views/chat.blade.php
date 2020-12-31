@@ -7,7 +7,12 @@
                     @foreach ($messages as $message)
                         <div class="row">
                             <div class="col-md-10 {{$message->from== Auth::user()->id? 'offset-md-2 text-right' : ''}}" style="margin-top: 5px;">
-                                {{$message->content}}
+                                    {{$message->created_at}}
+                                <br><br>
+                                <span style="background-color: #F5F5F5;border: 0px solid #F5F5F5;height: 40px;
+                                            border-radius: 15px;padding: 10px;" >
+                                    {{$message->content}}
+                                </span>
                             </div>
                         </div>
                     @endforeach
@@ -15,11 +20,9 @@
                 <form action="" method="post">
                     @csrf
                     <div>
-                        <div>
-                            <textarea name="content" placeholder="Ecrivez votre message" class="form-control"></textarea>
-                        </div>
-                        <div>
-                            <button class="btn btn-primary">Envoyer</button>
+                        <div style="">
+                            <input style="display:inline ; width:95%" type="text" name="content" placeholder="Ecrivez votre message" class="form-control iinput" />
+                             <button style="display:inline ; float:right; margin-top:25px ; font-size:20px" class="fas fa-paper-plane"></button>
                         </div>
                     </div>
                 </form>

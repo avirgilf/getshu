@@ -69,6 +69,21 @@
             *:focus {
                 outline: none;
             }
+            .bottom-left {
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+            }
+
+            .iinput{
+                width:100%;
+                background-color: #F5F5F5;
+                border: 0px solid #F5F5F5;
+                height: 40px;
+                border-radius: 15px;
+                Margin-top:10px;
+                padding-left: 20px;
+            }
 
         </style>
     </head>
