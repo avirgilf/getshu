@@ -10,7 +10,7 @@
                                     {{$message->created_at}}
                                 <br><br>
                                 <span style="background-color: #F5F5F5;border: 0px solid #F5F5F5;height: 40px;
-                                            border-radius: 15px;padding: 10px;" >
+                                            border-radius: 15px;padding: 10px; text-align:left" >
                                     {{$message->content}}
                                 </span>
                             </div>
