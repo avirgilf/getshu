@@ -9,10 +9,10 @@
                             <div class="col-md-10 {{$message->from== Auth::user()->id? 'offset-md-2 text-right' : ''}}" style="margin-top: 5px;">
                                     {{$message->created_at}}
                                 <br><br>
-                                <span style="background-color: #F5F5F5;border: 0px solid #F5F5F5;height: 40px;
-                                            border-radius: 15px; text-align:left" >
+                                <div style="background-color: #F5F5F5;border: 0px solid #F5F5F5;height: 40px;
+                                            border-radius: 15px;padding: 10px; text-align:left" >
                                     {{$message->content}}
-                                </span>
+                                </div>
                             </div>
                         </div>
                     @endforeach
