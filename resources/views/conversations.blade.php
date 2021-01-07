@@ -3,7 +3,10 @@
             @foreach ($messages as $message)
             <div class="container" style="border-radius:5px 20px 5px; background-color:white">
                 <div class="row">
-                    <div class="col-2" style="border-radius:50%; background-color:red">
+                    <div class="col-2" style="border-radius:50%; background-image: 
+                                        url('./../public/storage/<?php $photo=$message->tophoto ; echo $photo ; ?>'); 
+                                        background-position: center; background-repeat: no-repeat; 
+                                        background-size: 100% 100%;">
                     
                     </div>
                     <div class="col-10" style="margin:0px; padding:0px">

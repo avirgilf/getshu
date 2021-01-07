@@ -55,6 +55,7 @@ class chatController extends Controller
         $message->from=Auth::user()->id;
         $message->to=User::find($id)->id;
         $message->toname=User::find($id)->name;
+        $message->tophoto=User::find($id)->profile_photo_path;
         $message->content=$req->content;
         $message->created_at=now();
         $message->save();

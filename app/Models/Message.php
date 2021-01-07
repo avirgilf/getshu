@@ -13,6 +13,7 @@ class Message extends Model
         'from',
         'to',
         'toname',
+        'tophoto',
         'content',
         'created_at',
         'read_at'
