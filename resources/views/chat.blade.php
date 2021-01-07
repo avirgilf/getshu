@@ -1,5 +1,5 @@
 <x-app-layout>
-    <div class="container">
+    <div class="">
         <div class="row">
             <div class="card">
                 <h5 class="card-header">{{$data['name']}}</h5>
@@ -18,7 +18,7 @@
                                     </div>
                                     
                                 <?php else: ?>
-                                    <div class="col-sm text-left" style="width:50%;float:left;border-radius: 10px 20px 19px;margin-bottom:10px; background-color:#EFEFEF; font-size:15px;">                          
+                                    <div class="col-sm text-left" style="width:60%;float:left;border-radius: 10px 20px 19px;margin-bottom:10px; background-color:#EFEFEF; font-size:15px;">                          
                                         {{$message->content}}
                                     </div>
                                 <?php endif?>
