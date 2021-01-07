@@ -6,6 +6,10 @@
                 <a class="h4" style="margin-top:11px; margin-left:10px; text-decoration:none; color:black" href="chat/{{ $message->to }}">Send a message...<i class="fas fa-paper-plane" style="color:black;font-size:25px; margin:auto;"></i></a>  
 
             @endforeach
+            @if (empty($message))
+                 {{ You do not yet have a crush}}
+            @endif
+
         </div>
     </div> 
 </x-app-layout>
