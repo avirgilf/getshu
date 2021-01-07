@@ -18,7 +18,7 @@
                     @csrf
                     <div>
                         <div style="">
-                            <input style="display:inline ; width:95%" type="text" name="content" placeholder="Ecrivez votre message" class="form-control iinput" />
+                            <input style="display:inline ; width:92%" type="text" name="content" placeholder="Ecrivez votre message" class="form-control iinput" />
                              <button style="display:inline ; float:right; margin-top:25px ; font-size:20px" class="fas fa-paper-plane"></button>
                         </div>
                     </div>
