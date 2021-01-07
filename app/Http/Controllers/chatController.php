@@ -12,8 +12,18 @@ use Auth;
 class chatController extends Controller
 {
     //
+    public function index(){
+        $messages=Message::select('to','toname')->where('from','=',Auth::user()->id)->groupby('to','toname')->orderby('created_at','DESC')->get();
+        return view('conversations',compact('messages'));
 
-    function chatWhith($id){
+    }
+
+    public function showMessages(int $id){
+        
+    }
+
+
+    public function chatWhith($id){
         $friend_id= User::find($id)->id;
         $user_id=Auth::user()->id;
         $send_by_me=Message::all()
@@ -29,17 +39,16 @@ class chatController extends Controller
         return view('chat',['data'=>$data,'messages'=>$messages]);
     }
 
-    function showMessages(){
-        
-    }
+    
 
-    function store(Request $req,$id){
+    public function store(Request $req,$id){
         $req->validate([
             'content'=>'required',
         ]);
         $message=new Message;
         $message->from=Auth::user()->id;
         $message->to=User::find($id)->id;
+        $message->toname=User::find($id)->name;
         $message->content=$req->content;
         $message->created_at=now();
         $message->save();

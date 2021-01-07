@@ -31,7 +31,8 @@ Route::post('/acity', 'App\Http\Controllers\CityController@addcity');
 
 
 Route::get('chat/{id}','App\Http\Controllers\chatController@chatWhith')->name('chat');
-Route::get('messages','App\Http\Controllers\chatController@showMessages');
+Route::get('conversations','App\Http\Controllers\chatController@index');
+Route::get('conversations/{id}','App\Http\Controllers\chatController@showMessages');
 Route::post('chat/{id}','App\Http\Controllers\chatController@store');
 
 
