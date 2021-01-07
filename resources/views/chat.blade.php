@@ -13,12 +13,12 @@
                                 <?php 
                                 $from=$message->from;
                                 if($from==Auth::user()->id):?>
-                                    <div class="col-sm text-right" style="width:100%;border-radius: 10px 20px 19px;margin-bottom:10px; background-color:black;color:white; font-size:15px;">                          
+                                    <div class="col-sm text-right" style="border-radius: 10px 20px 19px;margin-bottom:10px; background-color:black;color:white; font-size:15px;">                          
                                         {{$message->content}}
                                     </div>
                                     
                                 <?php else: ?>
-                                    <div class="col-sm text-right" style="width:100%;border-radius: 10px 20px 19px;margin-bottom:10px; background-color:#EFEFEF; font-size:15px;">                          
+                                    <div class="col-sm text-left" style="border-radius: 10px 20px 19px;margin-bottom:10px; background-color:#EFEFEF; font-size:15px;">                          
                                         {{$message->content}}
                                     </div>
                                 <?php endif?>
