@@ -10,7 +10,7 @@
                         <div class="col-sm" style="width:100%;border-radius: 10px 600px;background-color:#EFEFEF">
                             <a style="text-decoration:none; color:black; " href="chat/{{ $message->to }}"> {{ $message->toname }} </a>
                         </div>
-                        <div class="col-sm text-right" style="width:100%;border-radius: 600px 10px; background-color:#C0C0C0;">
+                        <div class="col-sm text-right" style="width:100%;border-radius: 600px 10px; background-color:#FD5068; color:white; font-size:15px; heigth:30px">
                             jkkjkkjk
                         </div>
                     </div>
