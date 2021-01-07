@@ -17,7 +17,7 @@ class chatController extends Controller
             ->from(DB::raw('(SELECT * FROM messages ORDER BY created_at DESC) t'))
             ->groupBy('t.to')
             ->groupBy('t.from')
-            ->orderBy('t.from','DESC')
+            ->orderBy('t.created_at','DESC')
             ->get();
         //$messages=Message::select('to','toname' ,'content')->where('from','=',Auth::user()->id)->groupby('to','toname','content')->orderby('created_at','DESC')->get();
         return view('conversations',compact('messages'));
