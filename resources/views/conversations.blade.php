@@ -3,18 +3,16 @@
             @foreach ($messages as $message)
             <div class="container" style="border-radius:5px 20px 5px; background-color:white">
                 <div class="row">
-                    <div class="col-2" style="border-radius:50%; background-image: 
-                                        url('./../public/storage/<?php $photo=$message->tophoto ; echo $photo ; ?>'); 
-                                        background-position: center; background-repeat: no-repeat; 
-                                        background-size: 100% 100%;">
-                    
+                    <div class="col-3" style="border-radius:50%; ">
+                        <img style="border-radius:50%;"  src="./../public/storage/<?php $photo=$message->tophoto ; echo $photo ; ?>" />
+                        
                     </div>
-                    <div class="col-10" style="margin:0px; padding:0px">
+                    <div class="col-9" style="margin:0px; padding:0px">
                         <div class="col-sm" style="width:100%;border-radius: 600px 10px;background-color:#EFEFEF">
                             <a style="text-decoration:none; color:black; " href="chat/{{ $message->to }}"> {{ $message->toname }} </a>
                         </div>
                         <div class="col-sm text-right" style="width:100%;border-radius: 10px 600px;margin-bottom:10px; background-color:#FD5068; font-size:15px; heigth:30px">                          
-                            <a style="text-decoration:none; color:white; " href="chat/{{ $message->to }}"> {{ $message->content }} </a>
+                            <a style="text-decoration:none; color:white; " href="chat/{{ $message->to }}"> {{ substr($message->content,0,20) }}  .... </a>
                         </div>
                     </div>
                     
