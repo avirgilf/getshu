@@ -6,14 +6,26 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Message extends Model
-{
-    public $timestamps = false;
+{   
     use HasFactory;
+
     protected $fillable = [
         'from',
         'to',
+        'toname',
         'content',
         'created_at',
         'read_at'
     ];
+
+    public $timestamps = false;
+
+    protected $date=['created_at','read_at'];
+
+    public function from()
+    {
+        return $this->belongsTo(User::class , 'from');
+    }
+
+    
 }

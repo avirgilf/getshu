@@ -18,6 +18,7 @@ class CreateMessagesTable extends Migration
             $table->foreignId('from')->constrained('users')->onDelete('cascade');
             $table->foreignId('to')->constrained('users')->onDelete('cascade');
             $table->text('content');
+            $table->text('toname');
             $table->dateTime('created_at')->useCurrent();
             $table->dateTime('read_at')->nullable();
         });

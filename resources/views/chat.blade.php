@@ -6,13 +6,10 @@
                 <div class="card-body messages">
                     @foreach ($messages as $message)
                         <div class="row">
-                            <div class="col-md-10 {{$message->from== Auth::user()->id? 'offset-md-2 text-right' : ''}}" style="margin-top: 5px;">
+                            <div class="col-md-10 {{$message->from== Auth::user()->id? 'offset-md-2 text-right' : ''}}" >
                                     {{$message->created_at}}
-                                <br><br>
-                                <label style="background-color: #F5F5F5;border: 0px solid #F5F5F5;height: 40px;
-                                            border-radius: 15px;padding: 2px" >
+                                <br>
                                     {{$message->content}}
-                                </label>
                             </div>
                         </div>
                     @endforeach
