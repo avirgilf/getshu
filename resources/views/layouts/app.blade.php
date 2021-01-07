@@ -84,7 +84,6 @@
                 Margin-top:10px;
                 padding-left: 20px;
             }
-
         </style>
     </head>
     <body class="font-sans antialiased">
