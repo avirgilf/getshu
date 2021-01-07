@@ -7,10 +7,10 @@
                     
                     </div>
                     <div class="col-10" style="margin:0px; padding:0px">
-                        <div class="col-sm" style="width:100%;border-radius: 10px 600px;background-color:#EFEFEF; margin-bottom:10px">
+                        <div class="col-sm" style="width:100%;border-radius: 10px 600px;background-color:#EFEFEF">
                             <a style="text-decoration:none; color:black; " href="chat/{{ $message->to }}"> {{ $message->toname }} </a>
                         </div>
-                        <div class="col-sm text-right" style="width:100%;border-radius: 600px 10px; background-color:#FD5068; font-size:15px; heigth:30px">                          
+                        <div class="col-sm text-right" style="width:100%;border-radius: 600px 10px;; margin-bottom:10px background-color:#FD5068; font-size:15px; heigth:30px">                          
                             <a style="text-decoration:none; color:white; " href="chat/{{ $message->to }}"> {{ $message->content }} </a>
                         </div>
                     </div>
