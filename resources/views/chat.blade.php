@@ -13,7 +13,7 @@
                                 <?php 
                                 $from=$message->from;
                                 if($from==Auth::user()->id):?>
-                                    <div class="col-sm text-right" style="width:50%;float:right;border-radius: 10px 20px 19px;margin-bottom:10px; background-color:black;color:white; font-size:15px;">                          
+                                    <div class="col-sm text-right" style="width:60%;float:right;border-radius: 10px 20px 19px;margin-bottom:10px; background-color:#808080;color:white; font-size:15px;">                          
                                         {{$message->content}}
                                     </div>
                                     
