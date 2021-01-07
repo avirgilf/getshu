@@ -14,7 +14,7 @@ class chatController extends Controller
     //
     public function index(){
         $messages = Message::select(DB::raw('t.*'))
-            ->from(DB::raw('(SELECT * FROM messages ORDER BY created_at DESC) t'))
+            ->from(DB::raw('(SELECT * FROM messages) t'))
             ->where('t.from','=',Auth::user()->id)
             ->groupBy('t.to')
             ->orderBy('t.created_at','DESC')
