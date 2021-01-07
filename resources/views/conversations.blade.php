@@ -3,8 +3,8 @@
             @foreach ($messages as $message)
             <div class="container" style="border-radius:5px 20px 5px; background-color:white">
                 <div class="row">
-                    <div class="col-2" style="border-radius:50%; ">
-                        <img style="border-radius:50%;"  src="./../public/storage/<?php $photo=$message->tophoto ; echo $photo ; ?>" />
+                    <div class="col-2" style="margin:0px; padding:0px">
+                        <img style="border-radius:50%; width:100%;margin:0px; padding:0px"  src="./../public/storage/<?php $photo=$message->tophoto ; echo $photo ; ?>" />
                         
                     </div>
                     <div class="col-10" style="margin:0px; padding:0px">
