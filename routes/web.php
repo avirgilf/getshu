@@ -35,6 +35,9 @@ Route::get('conversations','App\Http\Controllers\chatController@index');
 Route::get('conversations/{id}','App\Http\Controllers\chatController@showMessages');
 Route::post('chat/{id}','App\Http\Controllers\chatController@store');
 
+Route::get('settingup','App\Http\Controllers\settingsController@imageUpload')->name('chat');
+Route::get('image-upload','App\Http\Controllers\settingsController@imageUpload')->name('chat');
+Route::post('image-upload','App\Http\Controllers\settingsController@imageUploadPost')->name('chat');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
