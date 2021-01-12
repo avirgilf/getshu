@@ -1,9 +1,10 @@
 <x-jet-form-section submit="updateProfileInformation">
     <x-slot name="title">
-        {{ __('Keep your profile up to date') }}
+        {{ __('Profile Information') }}
     </x-slot>
 
     <x-slot name="description">
+        {{ __('Update your account\'s profile information and email address.') }}
     </x-slot>
 
     <x-slot name="form">
@@ -23,11 +24,11 @@
                                     reader.readAsDataURL($refs.photo.files[0]);
                             " />
 
-                <x-jet-label for="photo" value="{{ __('Your Photo here') }}" />
+                <x-jet-label for="photo" value="{{ __('Photo') }}" />
 
                 <!-- Current Profile Photo -->
                 <div class="mt-2" x-show="! photoPreview">
-                    <img src="{{ $this->user->profile_photo_url }}" alt="{{$this->user->name }}" class="rounded-full h-20 w-20 object-cover">
+                    <img src="{{ $this->user->profile_photo_url }}" alt="{{ $this->user->name }}" class="rounded-full h-20 w-20 object-cover">
                 </div>
 
                 <!-- New Profile Photo Preview -->
@@ -41,12 +42,11 @@
                     {{ __('Select A New Photo') }}
                 </x-jet-secondary-button>
 
-                <!--
                 @if ($this->user->profile_photo_path)
                     <x-jet-secondary-button type="button" class="mt-2" wire:click="deleteProfilePhoto">
                         {{ __('Remove Photo') }}
                     </x-jet-secondary-button>
-                @endif-->
+                @endif
 
                 <x-jet-input-error for="photo" class="mt-2" />
             </div>
@@ -66,18 +66,7 @@
             <x-jet-input-error for="email" class="mt-2" />
         </div>
 
-        <!-- Short budget 
-        <div class="col-span-6 sm:col-span-4">
-            <x-jet-label for="short_budget" value="{{ __('short_budget') }}" />
-            <x-jet-input id="short_budget" type="number" class="mt-1 block w-full" wire:model.defer="state.short_budget" />
-            <x-jet-input-error for="short_budget" class="mt-2" />
-        </div>
-
-        <div class="col-span-6 sm:col-span-4">
-            <x-jet-label for="long_budget" value="{{ __('long_budget') }}" />
-            <x-jet-input id="long_budget" type="number" class="mt-1 block w-full" wire:model.defer="state.long_budget" />
-            <x-jet-input-error for="long_budget" class="mt-2" />
-        </div>-->
+        
     </x-slot>
 
     <x-slot name="actions">
