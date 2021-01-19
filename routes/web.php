@@ -29,7 +29,7 @@ Route::post('/alang', 'App\Http\Controllers\LanguageController@addlanguage');
 Route::get('/fcity', 'App\Http\Controllers\CityController@feshcity');
 Route::get('/fpack', 'App\Http\Controllers\packController@feshpack');
 Route::post('/acity', 'App\Http\Controllers\CityController@addcity');
-Route::post('/apack', 'App\Http\Controllers\CityController@addpack');
+Route::post('/apack', 'App\Http\Controllers\packController@addpack');
 Route::post('user/profileinfo', 'App\Http\Controllers\profileController@userupdate');
 
 
