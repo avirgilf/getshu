@@ -12,9 +12,9 @@
         </h3>
         <div class="row">
             <div class="col-lg-4" >
-                <form action="{{ url('packm') }}"  method="post">
+                <form action="{{ url('apack') }}"  method="post">
                     @csrf
-                    <select class="iinput" name="countries_id" id="country-select">
+                    <select class="iinput" name="country_id" id="country-select">
                         <option value="">Choose a country:</option>
                         @forelse($country as $countries)
                             <option value="{{$countries->id}}">{{$countries->country_name}}</option>
@@ -22,10 +22,10 @@
                         @endforelse
                     </select>
                     <p style="color:red" >@error('country_id') {{$message}} @enderror</p>
-                    <select class="iinput" name="currency_id" id="currency-select">
+                    <select class="iinput" name="currency_code" id="currency-select">
                         <option value="">Choose a currency:</option>
                         @forelse($currency as $currencies)
-                            <option value="{{$currencies->id}}">{{$currencies->currency_name}} {{$currencies->currency_code}}</option>
+                            <option value="{{$currencies->currency_code}}">{{$currencies->currency_name}} {{$currencies->currency_code}}</option>
                         @empty
                         @endforelse
                     </select>

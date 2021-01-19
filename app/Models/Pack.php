@@ -7,5 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Pack extends Model
 {
-    use HasFactory;
+    protected $fillable = [
+        'pack_name',
+        'pack_fees',
+        'country_id',
+        'currency_code',
+    ];
+    
 }
