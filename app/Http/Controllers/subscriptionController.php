@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class usersubsController extends Controller
+class subscriptionController extends Controller
 {
     //
 }
