@@ -4,8 +4,12 @@
         
     </x-slot>
     <?php 
-        $profil=Auth::user()->profil; $countryid=Auth::user()->countryid; $gender=Auth::user()->gender;
-        if ($profil=='client'): ?>
+        $profil=Auth::user()->profil;  
+        $image=Auth::user()->profile_photo_path; 
+        $countryid=Auth::user()->countryid; 
+        $gender=Auth::user()->gender;
+
+        if (($profil=='client') && isset($image) ): ?>
 
         <div class="" style="padding-top:0px; margin:0px"><br>
             <form method="post" action="search-result">
@@ -62,6 +66,9 @@
         </div>
     
 <?php else: ?>
-        Otherwise this will show.
+    <script>
+        window.location.href = '{{url("/user/profile")}}';
+    </script>
+
 <?php endif; ?>
 </x-app-layout>
