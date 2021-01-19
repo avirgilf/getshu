@@ -34,7 +34,8 @@ Route::post('user/profileinfo/{id}', 'App\Http\Controllers\profileController@use
 
 
 Route::get('chat/{id}','App\Http\Controllers\chatController@chatWhith')->name('chat');
-Route::get('conversations','App\Http\Controllers\chatController@index');
+Route::get('conversations','App\Http\Controllers\chatController@index')->name('conversations');
+//Route::get('conversations','App\Http\Controllers\chatController@index');
 Route::get('conversations/{id}','App\Http\Controllers\chatController@showMessages');
 Route::post('chat/{id}','App\Http\Controllers\chatController@store');
 
