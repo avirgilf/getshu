@@ -28,6 +28,7 @@ Route::get('/flanguage', 'App\Http\Controllers\LanguageController@feshlanguage')
 Route::post('/alang', 'App\Http\Controllers\LanguageController@addlanguage');
 Route::get('/fcity', 'App\Http\Controllers\CityController@feshcity');
 Route::post('/acity', 'App\Http\Controllers\CityController@addcity');
+Route::post('user/profileinfo', 'App\Http\Controllers\profileController@userupdate');
 
 
 Route::get('chat/{id}','App\Http\Controllers\chatController@chatWhith')->name('chat');
@@ -36,8 +37,6 @@ Route::get('conversations/{id}','App\Http\Controllers\chatController@showMessage
 Route::post('chat/{id}','App\Http\Controllers\chatController@store');
 
 Route::get('settingup','App\Http\Controllers\settingsController@imageUpload')->name('chat');
-Route::get('image-upload','App\Http\Controllers\settingsController@imageUpload')->name('chat');
-Route::post('image-upload','App\Http\Controllers\settingsController@imageUploadPost')->name('chat');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

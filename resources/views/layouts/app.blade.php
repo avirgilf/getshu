@@ -31,7 +31,15 @@
             body {
                 font-family: 'Nunito';
             }
-            
+
+        .mobileShow {display: none;}
+            .pcshow { display: none; }
+            /* Smartphone Portrait and Landscape */
+            @media only screen
+              and (max-width : 500px){ 
+                .mobileShow {display: block;}
+
+                
             svg{
                width: 100%;
                height: auto; 
@@ -84,6 +92,7 @@
                 Margin-top:10px;
                 padding-left: 20px;
             }
+              }
         </style>
     </head>
     <body class="font-sans antialiased">
@@ -99,7 +108,7 @@
                     <div class=""style="background:white">                         
                             @include('navigation-dropdown')
                     </div>
-                    <div class="" style="margin-top:0px; padding-top:0px">
+                    <div class="" style="mobileShow margin-top:0px; padding-top:0px ">
                             {{ $slot }}
                     </div>
                 </div>

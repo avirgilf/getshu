@@ -216,7 +216,7 @@
                                 <span class="white-text" style="font-family: 'Audiowide', cursive;">Get shuga</span>
                             </div>
                         </div>
-                            <div class="col-md-6 white-text text-center coo">
+                            <div class="col-md-6 white-text text-center coo mobileShow">
                                 @yield('content')
                             </div>
                         </div>

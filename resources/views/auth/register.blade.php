@@ -6,20 +6,20 @@
     @csrf
 
     <div class="tab">
-        <input id="name" class="iinput form-control" placeholder="Username" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
+        <input id="name" class="iinput form-control" placeholder="Username" type="text" name="name" :value="old('name')" required autofocus autocomplete="off" />
 
         <input id="email" class="iinput form-control" placeholder="Email" type="email" name="email" :value="old('email')" required />
     </div>
 
     <div class="tab">
         <select class=" iinput form-control form-control-sm" name="gender">
-            <option  value="1">I Am a Woman</option>
             <option  value="2">I Am a Man</option>
+            <option  value="1">I Am a Woman</option>
         </select> 
         
         <select class=" iinput form-control form-control-sm" name="clientype">
-            <option  value="1">I want an escort</option>
-            <option  value="2">I am an escort</option>
+            <option  value="1">I am looking for an escort</option>
+            <option  value="2">I want to be an escort</option>
         </select>
     </div>
 

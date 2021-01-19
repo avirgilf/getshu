@@ -22,6 +22,9 @@ class CreateUsersTable extends Migration
             $table->string('profil');
             $table->string('old');
             $table->string('gender');
+            $table->string('phone_number')->nullable();;
+            $table->string('skin_type')->nullable();;
+            $table->string('body_type')->nullable();;
             $table->string('clienttype');
             $table->string('countryid');
             $table->integer('short_budget')->nullable();
