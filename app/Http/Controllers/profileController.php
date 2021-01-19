@@ -15,20 +15,21 @@ class profileController extends Controller
         return view('view-profile',['data'=>$data]);
     }
 
-    function userupdate(){
-        $userid = Auth::user()->id;
-      
-
-        $user=DB::table('users')
-              ->where('id', $userid)
-              ->update([
-                  'phone_number' => $input['Phone_number'] ,
-                  'cities_id' => $input['cities'],
-                  'skin_type' => $input['skin_type'],
-                  'body_type' => $input['body_type'],])->save();
-                
-                  return view('dashboard');
-
+    function userupdate(Request $req,$id){
+        $req->validate([
+        'Phone_number'=>'required',
+        'cities'=>'required',
+        'skin_type'=>'required',
+        'body_type'=>'required',
+        ]);
+        $profil = User::find($id);
+        $profil->cities_id=$req->cities;
+        $profil->phone_number=$req->Phone_number;
+        $profil->skin_type=$req->skin_type;
+        $profil->body_type=$req->body_type;
+        $profil->updated_at=now();
+        $profil->save();
+        return redirect()->back();
     }
-
+    
 }

@@ -30,7 +30,7 @@ Route::get('/fcity', 'App\Http\Controllers\CityController@feshcity');
 Route::get('/fpack', 'App\Http\Controllers\packController@feshpack');
 Route::post('/acity', 'App\Http\Controllers\CityController@addcity');
 Route::post('/apack', 'App\Http\Controllers\packController@addpack');
-Route::post('user/profileinfo', 'App\Http\Controllers\profileController@userupdate');
+Route::post('user/profileinfo/{id}', 'App\Http\Controllers\profileController@userupdate');
 
 
 Route::get('chat/{id}','App\Http\Controllers\chatController@chatWhith')->name('chat');

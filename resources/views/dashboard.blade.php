@@ -33,13 +33,22 @@
                                 <option value="1">Woman</option>
                                 <option value="2">Man</option>
                             </select>
-                            <!-- recuperation de la race-->
-                            <?php  $ethnicity=\App\Models\Ethnicity::All(); ?>
-                            <select name="ethnicity" id="ethnicity" class="badge badge-dark"style="border-radius: 15px; height:30px; width:30%">
-                                <?php  foreach($ethnicity as $ethnicities) :?>     
-                                    <option value="{{$ethnicities->id}}">{{$ethnicities->ethnicity_name}}</option>
-                                <?php  endforeach;?>
+                            <select class="badge badge-dark" name="body_type" style="border-radius: 15px; height:30px; width:30%" >
+                                <option value="1">Skinny body</option>
+                                <option value="2">regular body</option>
+                                <option value="3">BBW body</option>
                             </select>
+                            <select class="badge badge-dark" name="skin_type" style="border-radius: 15px; height:30px; width:30%">
+                                <option value="1">Black skin</option>
+                                <option value="2">Brown skin</option>
+                                <option value="3">Ligth skin</option>
+                                <option value="4">Fair skin</option>
+                                <option value="5">white skin</option>
+                                <option value="6">yellow skin</option>
+                                <option value="7">red skin</option>
+                            </select>
+
+                            
                             <input type="text" class="col-md-2" name="old" id="old" placeholder="Old" class="" style="border-radius: 15px; height:30px; width:30%">
                             <!-- recuperation des budgets-->
                             

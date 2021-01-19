@@ -26,6 +26,9 @@ class searchController extends Controller
             $users=DB::select("select * from users
                                where gender=$_POST[gender] 
                                and countryid=$_POST[countryid] 
+                               and cities_id=$_POST[city] 
+                               and body_type=$_POST[body_type] 
+                               and skin_type=$_POST[skin_type] 
                                and id!=$currentuserid 
                                and clienttype!=$currentuserclienttype"
                             );

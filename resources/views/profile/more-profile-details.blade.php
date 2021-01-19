@@ -10,7 +10,7 @@
     <x-slot name="content">
     <div>
         <div class="row">
-                <form action="profileinfo"  method="post">
+                <form action="profileinfo/{{Auth::user()->id}}"  method="post">
                     @csrf
                     <?php 
                         $country=Auth::user()->countryid;
