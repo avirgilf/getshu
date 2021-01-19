@@ -27,6 +27,7 @@ Route::post('/acoun', 'App\Http\Controllers\CountryController@addcountry');
 Route::get('/flanguage', 'App\Http\Controllers\LanguageController@feshlanguage');
 Route::post('/alang', 'App\Http\Controllers\LanguageController@addlanguage');
 Route::get('/fcity', 'App\Http\Controllers\CityController@feshcity');
+Route::get('/fpack', 'App\Http\Controllers\packController@feshpack');
 Route::post('/acity', 'App\Http\Controllers\CityController@addcity');
 Route::post('user/profileinfo', 'App\Http\Controllers\profileController@userupdate');
 

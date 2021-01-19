@@ -33,6 +33,7 @@
                 <a class="badge badge-secondary"href="flanguage">Add Language</a>
                 <a class="badge badge-secondary"href="fcountry">Add Country</a>
                 <a class="badge badge-secondary"href="fcity">Add City</a>
+                <a class="badge badge-secondary"href="fpack">Add pack</a>
             </div>
 <?php   else: ?>
             
