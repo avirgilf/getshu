@@ -25,11 +25,11 @@
                     <select class="iinput" name="currency_code" id="currency-select">
                         <option value="">Choose a currency:</option>
                         @forelse($currency as $currencies)
-                            <option value="{{$currencies->currency_code}}">{{$currencies->currency_name}} {{$currencies->currency_code}}</option>
+                            <option value="{{$currencies->id}}">{{$currencies->currency_name}} {{$currencies->currency_code}}</option>
                         @empty
                         @endforelse
                     </select>
-                    <p style="color:red" > @error('currency_id') {{$message}} @enderror</p>
+                    <p style="color:red" > @error('currency_code') {{$message}} @enderror</p>
                     
                     <input class="iinput" type="text" name="pack_name" value="{{ old('pack_name') }}" placeholder="Pack name" autocomplete="off" />
                     <p style="color:red" >@error('pack_name') {{$message}} @enderror</p>
