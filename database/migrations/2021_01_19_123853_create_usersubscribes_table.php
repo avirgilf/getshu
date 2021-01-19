@@ -15,6 +15,11 @@ class CreateUsersubscribesTable extends Migration
     {
         Schema::create('usersubscribes', function (Blueprint $table) {
             $table->id();
+            $table->string('user_id');
+            $table->string('pack_id');
+            $table->string('type_operation');
+            $table->dateTime('start_at');
+            $table->dateTime('end_at');
             $table->timestamps();
         });
     }
