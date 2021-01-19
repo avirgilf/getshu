@@ -13,13 +13,25 @@ class chatController extends Controller
 {
     //
     public function index(){
-        $messages = Message::select(DB::raw('t.*'))
+        $user_type=Auth::user()->clienttype;
+        if ($user_type==1){
+            $messages = Message::select(DB::raw('t.*'))
             ->from(DB::raw('(SELECT * FROM messages ORDER BY created_at DESC) t'))
             ->where('t.from','=',Auth::user()->id)
             ->groupBy('t.to')
             ->orderBy('t.created_at','DESC')
             ->get();
         //$messages=Message::select('to','toname' ,'content')->where('from','=',Auth::user()->id)->groupby('to','toname','content')->orderby('created_at','DESC')->get();
+        }
+        else {
+            
+            $messages = Message::select(DB::raw('t.*'))
+            ->from(DB::raw('(SELECT * FROM messages ORDER BY created_at DESC) t'))
+            ->where('t.to','=',Auth::user()->id)
+            ->groupBy('t.from')
+            ->orderBy('t.created_at','DESC')
+            ->get();
+        }
         return view('conversations',compact('messages'));
 
     }
