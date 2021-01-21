@@ -1,33 +1,31 @@
 @extends('dashboard')
 
 @section('search-result')
+<div class="container">
+        <div class="row">
     @if ($users)
         @foreach($users as $user)
         
-            <div class="rounded-circle shadow" style="width:150px ; height:160px; 
-                        background-image: 
-                                        url('./../public/storage/<?php $photo=$user->profile_photo_path; echo $photo ; ?>'); 
-                                        background-position: center; background-repeat: no-repeat; 
-                                        background-size: 100% 100%; margin-right:4px;margin-left:4px">
-                                    
-                <div class="text-center" style="background-color:rgba(0, 0, 0, 0.5);
-                                                height: 75px; width:150px; border-radius: 0px 0px 100px 100px;margin-top:84px"><br>
-                    <span class="" style="color:white">
+            <div class="col-2" style="margin:0px; padding:0px">
+                <img class="block rounded-full w-20 h-20" style="border-radius:100%;"  src="./../public/storage/<?php $photo=$user->profile_photo_path; echo $photo ; ?>" />
+                <br>
+                <span class="" style="color:black">
                         <a href="view-profile/{{$user->id}}" class="shadow" style="color:white; text-decoration:none" >
                         <?php 
                             $longString = $user->name ;
                             echo substr($longString, 0, 8).', '.$user->old;
                         ?>
                         </a>
-                    </span><br>
-                    <a href="view-profile/{{$user->id}}" class="shadow " style="color:white; text-decoration:none">View</a>
-                </div>
-                                        
+                    </span>
             </div>
+            
         
         @endforeach
     @else
         No result for this search
     @endif
+    </div>
+
+        </div>
 @endsection
 
