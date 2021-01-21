@@ -7,7 +7,7 @@
         @foreach($users as $user)
         
             <div class="col-3" style="margin:0px; padding:0px">
-                <img class="block rounded-full w-20 h-20" style="border-radius:100%;"  src="./../public/storage/<?php $photo=$user->profile_photo_path; echo $photo ; ?>" />
+                <img class="block rounded-full " style="border-radius:100%;"  src="./../public/storage/<?php $photo=$user->profile_photo_path; echo $photo ; ?>" />
                 <br>
                 <span class="" style="color:black">
                         <a href="view-profile/{{$user->id}}" class="shadow" style="color:white; text-decoration:none" >
