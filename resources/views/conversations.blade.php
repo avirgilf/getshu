@@ -11,7 +11,7 @@
                         $userid=\App\Models\User::All()->where('id','==',$message->to); ?>
                         @foreach($userid as $users) 
                           <img src="./../public/storage/{{$users->profile_photo_path}}"  class="rounded-full h-20 w-20 object-cover">
-                        endforeach
+                        @endforeach
                     </div>
                 </div>
                    
