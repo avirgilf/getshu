@@ -4,15 +4,15 @@
             @foreach ($messages as $message)
             <div class="container" style="border-radius:5px 20px 5px; background-color:white ; margin-bottom:3px">
                 <div class="row">
-                <div class="col-2">
-                    <div class="mt-2">
+                <div class="col-3">
+                    <div class="">
                       <img src="./../public/storage/<?php $photo=$message->tophoto ; echo $photo ; ?>"  class="rounded-full h-20 w-20 object-cover">
                        
                     </div>
                 </div>
                 
                    
-                    <div class="col-10 " style="margin:0px; padding:0px">
+                    <div class="col-9 " style="margin:0px; padding:0px">
                         <div class="col-sm" style="width:100%;border-radius: 600px 10px;background-color:#EFEFEF; margin-top:13px">
                             <a style="text-decoration:none; color:black; " href="chat/{{ $message->to }}"> {{ $message->toname }} <span class="badge badge-dark" style="border-radius:50%; float:right">9</span> </a>
                         </div>
