@@ -6,7 +6,7 @@
     @if ($users)
         @foreach($users as $user)
         
-            <div class="col-2" style="margin:0px; padding:0px">
+            <div class="col-3" style="margin:0px; padding:0px">
                 <img class="block rounded-full w-20 h-20" style="border-radius:100%;"  src="./../public/storage/<?php $photo=$user->profile_photo_path; echo $photo ; ?>" />
                 <br>
                 <span class="" style="color:black">
