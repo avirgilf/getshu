@@ -6,8 +6,8 @@
     @if ($users)
         @foreach($users as $user)
         
-            <div class="col-3 rounded-full" style="margin:0px; padding:0px">
-                <img class="block img-responsive " style="border-radius:100%;"  src="./../public/storage/<?php $photo=$user->profile_photo_path; echo $photo ; ?>" />
+            <div class="col-3" style="margin:0px; padding:0px">
+                <img class="block rounded-full w-20 h-10" style="border-radius:100%;"  src="./../public/storage/<?php $photo=$user->profile_photo_path; echo $photo ; ?>" />
                 <br>
                 <span class="" style="color:black">
                         <a href="view-profile/{{$user->id}}" class="shadow" style="color:white; text-decoration:none" >
