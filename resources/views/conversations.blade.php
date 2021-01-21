@@ -9,7 +9,7 @@
                        
                 </div>
                    
-                    <div class="mt-10 " style="">
+                    <div class="col-10 " style="">
                         <div class="col-sm" style="width:100%;border-radius: 600px 10px;background-color:#EFEFEF; margin-top:13px">
                             <a style="text-decoration:none; color:black; " href="chat/{{ $message->to }}"> {{ $message->toname }} <span class="badge badge-dark" style="border-radius:50%; float:right">9</span> </a>
                         </div>
