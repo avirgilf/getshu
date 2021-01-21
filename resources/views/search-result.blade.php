@@ -5,8 +5,8 @@
         <div class="row">
     @if ($users)
         @foreach($users as $user)
-
-            <div class="mt-2">
+        <div class="col-3">
+            <div class="mt-2" style="margin:0px; padding:0px">
                 <a href="view-profile/{{$user->id}}" style="color:black; text-decoration:none" >
                     <img src="./../public/storage/<?php $photo=$user->profile_photo_path; echo $photo ; ?>"  class="rounded-full h-20 w-20 object-cover">
                         <?php 
@@ -15,6 +15,7 @@
                         ?>
                 </a>
             </div>
+        </div>
                 
         @endforeach
     @else
