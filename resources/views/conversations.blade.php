@@ -34,8 +34,11 @@
                 <div class="row">
                 <div class="col-3" style="margin:0px; padding:0px">
                     <div class="" style="margin:0px; padding:0px">
-                      <img src="./../public/storage/<?php $photo=$message->tophoto ; echo $photo ; ?>"  class="rounded-full h-20 w-20 object-cover">
-                       
+                    <?php 
+                        $userid=\App\Models\User::All()->where('id','==',$message->from); ?>
+                        @foreach($userid as $users) 
+                          <img src="./../public/storage/{{$users->profile_photo_path}}"  class="rounded-full h-20 w-20 object-cover">
+                        @endforeach
                     </div>
                 </div>
                 <div class="col-9 " style="margin:0px; padding:0px">
