@@ -2,7 +2,7 @@
 <br>
     <?php $user_type=Auth::user()->clienttype; if ($user_type==1) :?>
             @foreach ($messages as $message)
-            <div class="container" style="border-radius:5px 20px 5px; background-color:white ; margin-bottom:3px">
+            <div class="container" style="border-radius:5px 20px 5px; background-color:white ;">
                 <div class="row">
                 <div class="mt-2">
                     <img src="./../public/storage/<?php $photo=$message->tophoto ; echo $photo ; ?>"  class="rounded-full h-20 w-20 object-cover">
