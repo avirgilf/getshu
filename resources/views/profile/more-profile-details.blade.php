@@ -20,7 +20,7 @@
 
                     <p>
                         <label>Tell us something about you</label><br>
-                        <input class="iinput" type="text" name="description" value="{{ old('description') }}" required placeholder="{{ $countrycode->country_code }}" autocomplete="off" />
+                        <input class="iinput" type="text" name="description" value="{{ old('description') }}" required autocomplete="off" />
                         <p style="color:red" >@error('description') {{$message}} @enderror</p>
                     </p>
                     <p>
