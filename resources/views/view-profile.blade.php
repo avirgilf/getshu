@@ -5,8 +5,8 @@
             <div class="col-3" style="margin:0px; padding:0px"> </div>
             <div class="col-6" style="margin:10px; padding:0px">
                     <div class="mt-2" style="margin:0px; padding:0px">
-                        <a href="view-profile/{{$data->id}}" style="color:black; text-decoration:none" >
-                            <img src="./../public/storage/<?php $photo=$data->profile_photo_path; echo $photo ; ?>"  class="rounded-full h-20 w-20 object-cover">
+                        <a  style="margin:10px; padding:0px" href="view-profile/{{$data->id}}" style="color:black; text-decoration:none" >
+                            <img style="margin:10px; padding:0px"> src="./../public/storage/<?php $photo=$data->profile_photo_path; echo $photo ; ?>"  class="rounded-full h-20 w-20 object-cover">
                                 <?php 
                                     $longString = $data->name ;
                                     echo $longString.' , '.$data->old;
