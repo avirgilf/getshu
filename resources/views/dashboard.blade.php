@@ -16,7 +16,7 @@
                 @csrf
                 <div class="container">
                     <div class="">
-                    <p class="text-center">Make a search and enjoy!</p>
+                    <p class="text-center">Make a search and enjoy !</p>
                             <!-- recuperation du pays-->
                             <select name="countryid" id="countryid" class="badge badge-dark" style="border-radius: 15px; height:30px; width:30%" >
                                 <option  value="<?php echo $countryid;?>"> 
