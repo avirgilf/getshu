@@ -27,6 +27,7 @@ class profileController extends Controller
         $profil->phone_number=$req->Phone_number;
         $profil->skin_type=$req->skin_type;
         $profil->body_type=$req->body_type;
+        $profil->description=$req->description;
         $profil->updated_at=now();
         $profil->save();
         return redirect()->back();

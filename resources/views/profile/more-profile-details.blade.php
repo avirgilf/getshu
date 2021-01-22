@@ -17,6 +17,12 @@
                         $countryc=\App\Models\Country::All()->where('id','=',$country);
                         $cities=\App\Models\City::All()->where('countries_id','=',$country);
                     ?>
+
+                    <p>
+                        <label>Tell us something about you</label><br>
+                        <input class="iinput" type="text" name="description" value="{{ old('description') }}" required placeholder="{{ $countrycode->country_code }}" autocomplete="off" />
+                        <p style="color:red" >@error('description') {{$message}} @enderror</p>
+                    </p>
                     <p>
                         <label>Your phone number</label><br>
                         @forelse($countryc as $countrycode)
