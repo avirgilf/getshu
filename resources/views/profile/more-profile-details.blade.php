@@ -16,6 +16,9 @@
                         $country=Auth::user()->countryid;
                         $description=Auth::user()->description;
                         $phone_number=Auth::user()->phone_number;
+                        $cityid=Auth::user()->phone_number;
+                        $skin=Auth::user()->skin_type;
+                        $bodytype=Auth::user()->body_type;
 
                         $countryc=\App\Models\Country::All()->where('id','=',$country);
                         $cities=\App\Models\City::All()->where('countries_id','=',$country);
@@ -41,7 +44,8 @@
 
                         <select class="iinput" name="cities" id="city-select">
                             @forelse($cities as $city)
-                                <option value="{{$city->id}}">{{$city->city_name}}</option>
+                            <option value=""></option>
+                            <option value="{{$city->id}}">{{$city->city_name}}</option>
                             @empty
                             @endforelse
                         </select>
@@ -51,6 +55,17 @@
                         <label>What is your skin color?</label><br>
 
                         <select class="iinput" name="skin_type" id="city-select" required>
+                            <option value="{{ $skin }}">
+                                <?php switch ($skin) {
+                                    case 1: echo'Black';break;
+                                    case 2: echo'Brown';break; 
+                                    case 3: echo'Ligth';break; 
+                                    case 4: echo'Fair';break; 
+                                    case 5: echo'White';break; 
+                                    case 6: echo'Yellow';break; 
+                                    case 7: echo'Red';break; 
+                                    default: echo'Your skin color'; break; }  ?>
+                            </option>
                             <option value="1">Black</option>
                             <option value="2">Brown</option>
                             <option value="3">Ligth</option>
@@ -65,6 +80,14 @@
                         <label>What type of body are you?</label><br>
 
                         <select class="iinput" name="body_type" id="city-select" required>
+                            <option value="{{ $bodytype }}">
+                                <?php switch ($bodytype) {
+                                    case 1: echo'Skinny';break;
+                                    case 2: echo'Regular';break; 
+                                    case 3: echo'BBW';break; 
+                                    default: echo'Your body type'; break; }  ?>
+                            </option>
+                            <option value="{{ $bodytype }}"></option>
                             <option value="1">Skinny</option>
                             <option value="2">regular</option>
                             <option value="3">BBW</option>
