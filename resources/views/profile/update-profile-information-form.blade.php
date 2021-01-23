@@ -1,6 +1,6 @@
 <x-jet-form-section submit="updateProfileInformation">
-    <x-slot name="title" class="shadow-lg">
-        {{ __('Complete your profil & have fun ') }}
+    <x-slot name="title" >
+       <span class="shadow-lg"> {{ __('Complete your profil & have fun ') }} </span>
     </x-slot>
 
     <x-slot name="description">
