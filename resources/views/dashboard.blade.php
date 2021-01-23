@@ -7,9 +7,9 @@
         $profil=Auth::user()->profil;  
         $image=Auth::user()->profile_photo_path; 
         $countryid=Auth::user()->countryid; 
-        $gender=Auth::user()->gender;
+        $gender=Auth::user()->gender;$phone=Auth::user()->phone_number; 
 
-        if (($profil=='client') && isset($image) ): ?>
+        if (isset($image) && isset($phone)): ?>
 
         <div class="" style="padding-top:0px; margin:0px"><br>
             <form method="post" action="search-result">
