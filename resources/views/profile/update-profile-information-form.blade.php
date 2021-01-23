@@ -68,6 +68,9 @@
     </x-slot>
 
     <x-slot name="actions">
+        <x-jet-action-message class="mr-3" on="upload">
+            {{ __('uploading please wait.') }}
+        </x-jet-action-message>
         <x-jet-action-message class="mr-3" on="saved">
             {{ __('Saved.') }}
         </x-jet-action-message>
