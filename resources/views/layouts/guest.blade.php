@@ -227,6 +227,7 @@
             </div> 
         </main>
     </body>
+    <footer style="position: absolute;  bottom: 0 ; color:white" class="text-center">You must be 18+ Old</footer>
 </html>
 
 <script>
