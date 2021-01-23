@@ -14,19 +14,22 @@
                     @csrf
                     <?php 
                         $country=Auth::user()->countryid;
+                        $description=Auth::user()->description;
+                        $phone_number=Auth::user()->phone_number;
+
                         $countryc=\App\Models\Country::All()->where('id','=',$country);
                         $cities=\App\Models\City::All()->where('countries_id','=',$country);
                     ?>
 
                     <p>
                         <label>Tell us something about you</label><br>
-                        <input class="iinput" type="text" name="description" value="{{ old('description') }}" required autocomplete="off" />
+                        <input class="iinput" type="text" name="description" value="{{ $description }}" required autocomplete="off" />
                         <p style="color:red" >@error('description') {{$message}} @enderror</p>
                     </p>
                     <p>
                         <label>Your phone number</label><br>
                         @forelse($countryc as $countrycode)
-                        <input class="iinput" type="text" name="Phone_number" value="{{ old('Phone_number') }}" required placeholder="{{ $countrycode->country_code }}" autocomplete="off" />
+                        <input class="iinput" type="text" name="Phone_number" value="{{ $Phone_number }}" required placeholder="{{ $countrycode->country_code }}" autocomplete="off" />
                         @empty
                         @endforelse                    
                         <p style="color:red" >@error('Phone_number') {{$message}} @enderror</p>

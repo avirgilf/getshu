@@ -1,10 +1,10 @@
 <x-jet-action-section>
 <x-slot name="title">
-        {{ __('Sign out') }}
+        {{ __('') }}
     </x-slot>
 
     <x-slot name="description">
-        {{ __('Sign out now') }}
+        {{ __('') }}
     </x-slot>
 
     <x-slot name="content">
@@ -16,7 +16,7 @@
                     <x-jet-responsive-nav-link href="{{ route('logout') }}"
                                     onclick="event.preventDefault();
                                                 this.closest('form').submit();">
-                        {{ __('Logout') }}
+                        {{ __('Sign out') }}
                     </x-jet-responsive-nav-link>
 </form> 
 </x-slot>
