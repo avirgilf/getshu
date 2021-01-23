@@ -5,7 +5,7 @@
         <!--Mobile view-->
     <div class="mobileShow" >
         @if (Route::has('login'))
-            <div class="" style="padding-top:20%">
+            <div class="" style="padding-top:10%">
                <!-- <span class="span-to-30"> Francais - English</span>-->
                 @auth
             <a href="{{ url('/dashboard') }}">{{Auth::user()->name}}</a>
