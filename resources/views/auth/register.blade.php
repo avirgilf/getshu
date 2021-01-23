@@ -18,8 +18,8 @@
         </select> 
         
         <select class=" iinput form-control form-control-sm" name="clientype">
-            <option  value="1">I am looking for an escort</option>
-            <option  value="2">I want to be an escort</option>
+            <option  value="1">Looking for hookup/escort services</option>
+            <option  value="2">Offering hookup/escort services</option>
         </select>
     </div>
 
