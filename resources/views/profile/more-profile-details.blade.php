@@ -29,7 +29,7 @@
                     <p>
                         <label>Your phone number</label><br>
                         @forelse($countryc as $countrycode)
-                        <input class="iinput" type="text" name="Phone_number" value="{{ $Phone_number }}" required placeholder="{{ $countrycode->country_code }}" autocomplete="off" />
+                        <input class="iinput" type="text" name="Phone_number" value="{{ $phone_number }}" required placeholder="{{ $countrycode->country_code }}" autocomplete="off" />
                         @empty
                         @endforelse                    
                         <p style="color:red" >@error('Phone_number') {{$message}} @enderror</p>
