@@ -31,7 +31,7 @@ Route::get('/fpack', 'App\Http\Controllers\packController@feshpack');
 Route::post('/acity', 'App\Http\Controllers\CityController@addcity');
 Route::post('/apack', 'App\Http\Controllers\packController@addpack');
 Route::post('user/profileinfo/{id}', 'App\Http\Controllers\profileController@userupdate');
-Route::post('user/user/profileimage', 'App\Http\Controllers\profileController@profileimage');
+Route::post('user/profileimage', 'App\Http\Controllers\profileController@profileimage');
 
 
 Route::get('chat/{id}','App\Http\Controllers\chatController@chatWhith')->name('chat');
