@@ -8,7 +8,7 @@
         $image=Auth::user()->profile_photo_path; 
         $countryid=Auth::user()->countryid; 
         $gender=Auth::user()->gender;$phone=Auth::user()->phone_number; 
-        $Totaluser=Auth::user()->id->count();
+        $Totaluser=Auth::user()->name->count();
 
         if (isset($image) && isset($phone)): ?>
         <?php if($profil=='client'): ?>
