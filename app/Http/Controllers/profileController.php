@@ -21,7 +21,7 @@ class profileController extends Controller
 
     function userupdate(Request $req,$id){
         $req->validate([
-        'description'=>'required|regex:/^[a-zA-Z]+$',
+        'description'=>'required',
         'Phone_number'=>'required',
         'cities'=>'required',
         'skin_type'=>'required',
