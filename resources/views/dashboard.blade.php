@@ -8,7 +8,7 @@
         $image=Auth::user()->profile_photo_path; 
         $countryid=Auth::user()->countryid; 
         $gender=Auth::user()->gender;$phone=Auth::user()->phone_number; 
-        $Totaluser=Auth::user()->name->count();
+        $data['Totaluser']=Auth::user()->id->count();
 
         if (isset($image) && isset($phone)): ?>
         <?php if($profil=='client'): ?>
@@ -65,7 +65,7 @@
         </div>
         <?php else: ?>
 
-            {{ $Totaluser }}
+            {!! $Totaluser !!}}
 
         <?php endif; ?>
 
