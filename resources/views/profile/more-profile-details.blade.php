@@ -87,7 +87,6 @@
                                     case 3: echo'BBW';break; 
                                     default: echo'Your body type'; break; }  ?>
                             </option>
-                            <option value="{{ $bodytype }}"></option>
                             <option value="1">Skinny</option>
                             <option value="2">regular</option>
                             <option value="3">BBW</option>
