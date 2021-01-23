@@ -15,6 +15,10 @@ class profileController extends Controller
         return view('view-profile',['data'=>$data]);
     }
 
+    function profileimage(){
+        return view('profile.update-profile-information-form');
+    }
+
     function userupdate(Request $req,$id){
         $req->validate([
         'Phone_number'=>'required',
