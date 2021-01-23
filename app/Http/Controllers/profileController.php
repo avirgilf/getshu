@@ -34,7 +34,7 @@ class profileController extends Controller
         $profil->description=$req->description;
         $profil->updated_at=now();
         $profil->save();
-        return redirect()->back();
+        return view('dashboard');
     }
     
 }
