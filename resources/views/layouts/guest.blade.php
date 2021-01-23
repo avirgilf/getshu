@@ -62,7 +62,7 @@
                 width: 100%;
             }
             .span-top-30{
-                margin-top:25%;
+                margin-top:10%;
             }
             .buton{
                 background:rgba(10, 10, 9, 0.45);
