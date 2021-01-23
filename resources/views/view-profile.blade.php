@@ -18,7 +18,7 @@
                             echo $longString.' , '.$data->old;
                          ?><br>
                          <i class="fa fa-map-marker" style="color:green" aria-hidden="true"></i>
-                         {{ $data->countryid .' '. $data->cities_id}}
+                        
                      </a>
                     <!--<i class="fa fa-phone display-4" aria-hidden="true"></i><br>
                     <i class="fa fa-video" aria-hidden="true"></i>-->
