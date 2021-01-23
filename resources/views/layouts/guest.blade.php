@@ -214,7 +214,7 @@
                             <div class="vertical-align">
                                 <img style="whith:150px; height:100px;"  src="../public/storage/Shuga.png" /><br>
                                 <span class="white-text" style="font-family: 'Audiowide', cursive;">Get shuga</span><br>
-                                <span class="white-text">Hookup | Escorte | Sex call</span><br>
+                                <span class="white-text">Hookup | Escort | Sex call</span><br>
                                 <span class="white-text">In Africa</span>
                             </div>
                         </div>
