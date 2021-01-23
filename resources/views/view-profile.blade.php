@@ -42,7 +42,7 @@
                    <i class="fa fa-hand-o-down" aria-hidden="true"></i>
                 </div>
                 <div class="col-12 text-center " style="background-color:white">
-                   <p class="h6 bold" style="">Hookup & excort</p>
+                   <p class="h6 bold" style="">Hookup & escort</p>
                 </div>
                 
             </div>
