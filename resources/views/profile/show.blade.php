@@ -12,7 +12,7 @@
         <?php $profil=Auth::user()->profil;  $image=Auth::user()->profile_photo_path; $countryid=Auth::user()->countryid; 
         $gender=Auth::user()->gender; $phone=Auth::user()->phone_number; 
 
-        if (isset($image) ): ?>
+        if (!isset($image) ): ?>
 
             @if (Laravel\Fortify\Features::canUpdateProfileInformation())
                 @livewire('profile.update-profile-information-form')
@@ -20,7 +20,7 @@
                 <x-jet-section-border />
             @endif
 
-        <?php elseif(!isset($image) && isset($phone)): ?>
+        <?php elseif(isset($image) && !isset($phone)): ?>
 
                 <div class="mt-10 sm:mt-0">
                     @include('profile.more-profile-details')
