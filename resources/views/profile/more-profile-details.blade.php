@@ -44,7 +44,6 @@
 
                         <select class="iinput" name="cities" id="city-select">
                             @forelse($cities as $city)
-                            <option value=""></option>
                             <option value="{{$city->id}}">{{$city->city_name}}</option>
                             @empty
                             @endforelse
