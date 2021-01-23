@@ -3,7 +3,7 @@
 
 @section('content')
     <div>
-        {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
+        {{ __('') }}
     </div>
 
     @if (session('status'))
@@ -16,7 +16,7 @@
         <input id="email" class="iinput form-control" placeholder="Email" type="email" name="email" :value="old('email')" required autofocus />
         <br>
         <button class="buton">
-            {{ __('Email Password Reset Link') }}
+            {{ __('Email Me Password Reset Link') }}
         </button>
     </form>
 @endsection

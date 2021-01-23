@@ -107,9 +107,9 @@
             }    
         
             #regForm {
-              margin: 100px auto;
+              margin: 0px auto;
               font-family: Raleway;
-              padding: 10px;
+              padding: 0px;
               width: 100%;
               min-width: 300px;
             }
