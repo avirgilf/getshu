@@ -1,6 +1,3 @@
-<x-app-layout>
-@if (Laravel\Fortify\Features::canUpdateProfileInformation())
-
 <x-jet-form-section submit="updateProfileInformation">
     <x-slot name="title">
         {{ __('Profile Information') }}
@@ -80,6 +77,3 @@
         </x-jet-button>
     </x-slot>
 </x-jet-form-section>
-<x-jet-section-border />
-            @endif
-<x-app-layout>

@@ -68,7 +68,7 @@
     
 <?php else: ?>
     <script>
-        window.location.href = '{{url("/user/profileimage")}}';
+        window.location.href = '{{url("/user/profile")}}';
     </script>
 
 <?php endif; ?>
