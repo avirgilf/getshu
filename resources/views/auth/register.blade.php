@@ -31,7 +31,7 @@
                 @endforeach
         </select>
     
-        <input id="Old" class="iinput form-control" placeholder="Old" type="number" name="Old" :value="old('Old')" required />
+        <input id="Old" class="iinput form-control" placeholder="Age" type="number" name="Old" :value="old('Old')" required />
     </div>
 
     <div class="tab">
