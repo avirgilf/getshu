@@ -1,4 +1,4 @@
-<x-jet-action-section>
+<!--<x-jet-action-section>
 <x-slot name="title">
         {{ __('') }}
     </x-slot>
@@ -9,7 +9,7 @@
 
     <x-slot name="content">
 
-<!-- Authentication-->
+ Authentication
 <form method="POST" action="{{ route('logout') }}">
                     @csrf
 
@@ -21,4 +21,4 @@
 </form> 
 </x-slot>
 
-</x-jet-action-section>
+</x-jet-action-section>-->
