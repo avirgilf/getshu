@@ -86,7 +86,8 @@
                  ->where('id','!=',Auth::User()->id)
                  ->where('profil','!=','Admin')
                  ->where('clienttype','!=',Auth::User()->clienttype)
-                 ->where('gender','!=',Auth::User()->gender);
+                 ->where('gender','!=',Auth::User()->gender)
+                 ->where('profile_photo_path','!=', Null);
                  
 
             ?>
@@ -95,7 +96,7 @@
                     <div class="mt-2 text-center" style="margin:0px; padding:0px">
                         <a href="view-profile/{{$user->id}}" style="color:black; text-decoration:none" >
                             <img src="./../public/storage/<?php $photo=$user->profile_photo_path; echo $photo ; ?>"  class="rounded-full h-20 w-20 object-cover">
-                               <p style="font-size:10px; width:100%; text-align:center">
+                               <p class="bold" style="font-size:10px; width:100%; text-align:center">
                                 <?php 
                                     $longString = $user->name ;
                                     echo substr($longString, 0, 8).','.$user->old;

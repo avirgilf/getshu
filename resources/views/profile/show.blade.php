@@ -56,7 +56,7 @@
                 </div>
 
                 <x-jet-section-border />
-            @endif-->
+            @endif
 
             <div class="mt-10 sm:mt-0">
                 @livewire('profile.logout-other-browser-sessions-form')
@@ -73,7 +73,7 @@
 
             <div class="mt-10 sm:mt-0">
                 @livewire('profile.delete-user-form')
-            </div>
+            </div>-->
             <?php endif;?>
         </div>
     </div>
