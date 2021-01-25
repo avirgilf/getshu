@@ -76,7 +76,8 @@
         <br>
             <p>Be the fisrt to toast them</p><br>
 
-        <div class="row">
+        <div class="container">
+            <div class="row">
             <?php 
                  $newuser=\App\Models\User::All()->where('countryid','==',Auth::User()->countryid);
 
@@ -95,6 +96,7 @@
                 </div>
                         
                 @endforeach
+            </div>
             
         </div>
 
