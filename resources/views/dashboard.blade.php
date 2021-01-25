@@ -81,7 +81,7 @@
             <div class="row">
 
             <?php 
-                 $newuser=\App\Models\User::All()->where('countryid','==',Auth::User()->countryid)->where('id','!=',Auth::User()->id);
+                 $newuser=\App\Models\User::All()->where('countryid','==',Auth::User()->countryid)->where('id','!=',Auth::User()->id)->where('profil','!=','Admin');
 
             ?>
                 @foreach($newuser as $user)
