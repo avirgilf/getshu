@@ -76,7 +76,7 @@
         <br>
 
         <div class="container-fluid text-center">
-                    <p>Be the fisrt to toast them</p>
+                    <p>New here ! Be the fisrt to toast them</p>
 
             <div class="row">
 
