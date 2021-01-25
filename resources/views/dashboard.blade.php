@@ -74,10 +74,12 @@
             @yield('search-result')
         </div>
         <br>
-            <p>Be the fisrt to toast them</p>
 
-        <div class="container">
+        <div class="container-fluid text-center">
+                    <p>Be the fisrt to toast them</p>
+
             <div class="row">
+
             <?php 
                  $newuser=\App\Models\User::All()->where('countryid','==',Auth::User()->countryid);
 
