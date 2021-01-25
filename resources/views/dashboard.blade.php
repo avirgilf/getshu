@@ -73,7 +73,7 @@
         <div class="container d-flex flex-row">
             @yield('search-result')
             <br>
-            <p>Be the fisrt to toast them</p>
+            <p>Be the fisrt to toast them</p><br>
 
         <div class="row">
             <?php 
@@ -81,7 +81,7 @@
 
             ?>
             @if ($users)
-                @foreach($users as $user)
+                @foreach($newusers as $user)
                 <div class="col-3" style="margin:10px; padding:0px">
                     <div class="mt-2" style="margin:0px; padding:0px">
                         <a href="view-profile/{{$user->id}}" style="color:black; text-decoration:none" >
