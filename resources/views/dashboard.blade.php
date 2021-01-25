@@ -83,16 +83,16 @@
 
             ?>
                 @foreach($newuser as $user)
-                <div class="col-3" style="margin:5px; padding:0px">
+                <div class="col-3" style="margin:0px; padding:0px">
                     <div class="mt-2 text-center" style="margin:0px; padding:0px">
                         <a href="view-profile/{{$user->id}}" style="color:black; text-decoration:none" >
                             <img src="./../public/storage/<?php $photo=$user->profile_photo_path; echo $photo ; ?>"  class="rounded-full h-20 w-20 object-cover">
-                               <label style="font-size:8px">
+                               <p style="font-size:10px; width:100%; text-align:center">
                                 <?php 
                                     $longString = $user->name ;
                                     echo substr($longString, 0, 8).','.$user->old;
                                 ?>
-                                </label>
+                                </p>
                         </a>
                     </div>
                 </div>
